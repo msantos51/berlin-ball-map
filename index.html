@@ -10,5 +10,15 @@
     <h1>Encontre Vendedores de Bolas de Berlim na Praia</h1>
     <div id="map" style="width: 100%; height: 600px;"></div>
     <script src="script.js"></script>
+    
+    var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://whereareyou-425715-default-rtdb.europe-west1.firebasedatabase.app"
+});
+
 </body>
 </html>
